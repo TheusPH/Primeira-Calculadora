@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: purple;
+}
+
+#base {
+    display: grid;
+    justify-items: center;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'zerou zerou zerou zerou'
+        'sete oito nove tirar'
+        'quatro cinco seis multi'
+        'um dois tres menos'
+        'virgula zero mais igual'
+    ;
+    grid-gap: 10px;
+    width: 250px;
+    height: 250px;
+
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.zerou {
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 85%;
+    background-color: white;
+    grid-area: zerou;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgb(177, 177, 177);
+}
+
+.tirar {
+    grid-area: tirar;
+    background-color: rgb(220, 0, 0);
+}
+
+.tirar:hover {
+    transition: background-color 0.3s;
+    background-color: red;
+}
+
+.sete {
+    grid-area: sete;
+}
+
+.oito {
+    grid-area: oito;
+}
+
+.nove {
+    grid-area: nove;
+}
+
+.multi {
+    grid-area: multi;
+}
+
+.quatro {
+    grid-area: quatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.menos {
+    grid-area: menos;
+}
+
+.um {
+    grid-area: um;
+}
+
+.dois {
+    grid-area: dois;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.mais {
+    grid-area: mais;
+}
+
+.virgula {
+    grid-area: virgula;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.igual {
+    width: 75%;
+    grid-area: igual;
+    background-color: rgb(3, 223, 3);
+}
+
+.igual:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(0, 255, 0);
+}
+
+.sete,
+.oito,
+.nove,
+.multi,
+.quatro,
+.cinco,
+.seis,
+.menos,
+.um,
+.dois,
+.tres,
+.mais,
+.virgula,
+.zero,
+.igual,
+.tirar {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(139, 139, 139);
+}
